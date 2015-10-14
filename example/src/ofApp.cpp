@@ -106,20 +106,20 @@ void ofApp::draw()
     float y = s;
     
     ofSetColor(ofColor::fromHex(0xFF7B87));
-    ofDrawRectangle(x, y, 0, w, w);
+    ofRect(x, y, 0, w, w);
     
     x += w + s;
     ofSetColor(ofColor::fromHex(0x475887));
-    ofDrawCircle(x + w/2, y + w/2, w/2);
+    ofCircle(x + w/2, y + w/2, w/2);
     
     x += w + s;
     ofSetColor(220, 222, 121);
     ofSetLineWidth(30.0f);
-    ofDrawLine(x + s, y + s, x + w - s, y + w - s);
+    ofLine(x + s, y + s, x + w - s, y + w - s);
     
     x += w + s;
     ofSetColor(255, 232, 183);
-    ofDrawEllipse(x + w, y + w/2, w*2, w);
+    ofEllipse(x + w, y + w/2, w*2, w);
     
     x = s;
     y = s + w + s;
